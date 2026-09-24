@@ -1,0 +1,411 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.cover {
+  min-height: 100vh;
+
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(113, 133, 111, 0.15),
+      transparent 35%
+    ),
+    radial-gradient(
+      circle at bottom right,
+      rgba(180, 150, 90, 0.12),
+      transparent 35%
+    ),
+    #f5f1e8;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  padding: 30px;
+
+  position: relative;
+  overflow: hidden;
+}
+.bismillah {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.label {
+  font-size: 14px;
+  letter-spacing: 4px;
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: 80px;
+  font-weight: 500;
+
+  color: #526451;
+
+  letter-spacing: 2px;
+
+  margin-bottom: 5px;
+}
+
+.fullname {
+  font-size: 16px;
+
+  color: #6f756c;
+
+  letter-spacing: 1px;
+
+  margin-bottom: 15px;
+}
+
+.date {
+  font-size: 16px;
+  margin-bottom: 35px;
+}
+
+button {
+  padding: 14px 28px;
+  border: none;
+  border-radius: 30px;
+
+  background: #71856f;
+  color: white;
+
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.photo-frame {
+  width: 190px;
+  height: 190px;
+
+  border-radius: 50%;
+  padding: 7px;
+
+  border: 1px solid #71856f;
+
+  margin-bottom: 25px;
+
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.photo-frame img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.cover::before {
+  content: "";
+
+  position: absolute;
+
+  width: 280px;
+  height: 280px;
+
+  border: 1px solid rgba(113, 133, 111, 0.25);
+
+  border-radius: 50%;
+
+  top: -140px;
+  left: -140px;
+}
+
+.cover::after {
+  content: "";
+
+  position: absolute;
+
+  width: 220px;
+  height: 220px;
+
+  border: 1px solid rgba(180, 150, 90, 0.25);
+
+  border-radius: 50%;
+
+  bottom: -110px;
+  right: -110px;
+}
+
+.decor-line {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  margin-bottom: 20px;
+}
+
+.decor-line span {
+  width: 45px;
+  height: 1px;
+
+  background: #b4965a;
+}
+
+.decor-line small {
+  color: #b4965a;
+  font-size: 12px;
+}
+
+.invitation {
+  display: none;
+
+  min-height: 100vh;
+
+  padding: 70px 25px;
+
+  text-align: center;
+
+  background: #f5f1e8;
+
+  color: #4f5e4e;
+}
+
+.section-label {
+  font-size: 13px;
+
+  letter-spacing: 1px;
+
+  color: #9b8350;
+
+  margin-bottom: 25px;
+}
+
+.invitation h2 {
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: 42px;
+
+  font-weight: 500;
+
+  margin-bottom: 20px;
+}
+
+.intro {
+  max-width: 500px;
+
+  margin: auto;
+
+  line-height: 1.9;
+
+  font-size: 15px;
+
+  color: #6f756c;
+}
+
+.child-name {
+  margin: 50px 0;
+}
+
+.child-name h1 {
+  font-size: 65px;
+
+  margin-bottom: 5px;
+}
+
+.child-name p {
+  font-size: 15px;
+
+  letter-spacing: 1px;
+
+  color: #777;
+}
+
+.event-card {
+  max-width: 500px;
+
+  margin: auto;
+
+  padding: 35px 25px;
+
+  background: rgba(255, 255, 255, 0.55);
+
+  border: 1px solid rgba(113, 133, 111, 0.25);
+
+  border-radius: 20px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+}
+
+.event-card h3 {
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: 30px;
+
+  font-weight: 500;
+
+  margin-bottom: 30px;
+}
+
+.event-info {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 25px;
+}
+
+.event-info div {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 15px;
+}
+
+.event-info span {
+  font-size: 25px;
+}
+
+.event-info p {
+  font-size: 14px;
+
+  line-height: 1.7;
+
+  color: #6f756c;
+}
+
+.event-info strong {
+  color: #526451;
+}
+
+.countdown-section {
+  margin-top: 60px;
+}
+
+.countdown {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 10px;
+
+  margin-top: 25px;
+}
+
+.countdown div {
+  width: 70px;
+
+  padding: 15px 5px;
+
+  background: rgba(255, 255, 255, 0.6);
+
+  border-radius: 12px;
+}
+
+.countdown span {
+  display: block;
+
+  font-size: 25px;
+
+  font-weight: 500;
+
+  color: #526451;
+}
+
+.countdown small {
+  font-size: 10px;
+
+  color: #777;
+}
+
+.location-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.location-detail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.maps-button {
+  display: inline-block;
+
+  padding: 10px 20px;
+
+  border: 1px solid #71856f;
+  border-radius: 25px;
+
+  color: #526451;
+  text-decoration: none;
+
+  font-size: 13px;
+
+  transition: 0.3s;
+}
+
+.maps-button:hover {
+  background: #71856f;
+  color: white;
+}
+
+.music-button {
+  position: fixed;
+
+  right: 20px;
+  bottom: 20px;
+
+  width: 50px;
+  height: 50px;
+
+  border-radius: 50%;
+
+  border: 1px solid #b4965a;
+
+  background: #f5f1e8;
+
+  color: #526451;
+
+  font-size: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+
+  z-index: 100;
+
+  transition: 0.3s;
+}
+
+.music-button:hover {
+  transform: scale(1.08);
+}
+
+.music-button.playing {
+  animation: musicRotate 3s linear infinite;
+}
+
+@keyframes musicRotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
